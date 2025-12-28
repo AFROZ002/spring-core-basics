@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+<!--    <bean id="mystudent1" class="Alam.Student">-->
+<!--        <property name="name" value="John Doe"/>-->
+<!--        <property name="age" value="17"/>-->
+<!--        <property name="email" value="afrozcpr@gmail.com"/>-->
+<!--    </bean>-->
+
+<!--    <context:component-scan base-package="AnnotationBasedConfiguration"/>-->
+
+
+    <bean id="addrId" class="Dependency_Injection01.Addess">
+        <property name="houseNo" value="83"/>
+        <property name="city" value="Bangalore"/>
+        <property name="pinCode" value="560059"/>
+    </bean>
+
+    <!-- Student Bean -->
+    <bean id="student1" class="Dependency_Injection01.Student">
+        <property name="rollNo" value="101"/>
+        <property name="name" value="Alam Bhai"/>
+        <property name="address" ref="addrId"/>
+    </bean>
+
+
+
+</beans>
+
+
+
