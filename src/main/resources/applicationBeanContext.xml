@@ -15,19 +15,33 @@
 <!--    <context:component-scan base-package="AnnotationBasedConfiguration"/>-->
 
 
-    <bean id="addrId" class="Dependency_Injection01.Addess">
-        <property name="houseNo" value="83"/>
-        <property name="city" value="Bangalore"/>
-        <property name="pinCode" value="560059"/>
-    </bean>
+<!--    this is used for dependecy indejtion 01 method by xml method -->
 
-    <!-- Student Bean -->
-    <bean id="student1" class="Dependency_Injection01.Student">
-        <property name="rollNo" value="101"/>
-        <property name="name" value="Alam Bhai"/>
-        <property name="address" ref="addrId"/>
-    </bean>
+<!--    <bean id="addrId" class="Dependency_Injection01.Addess">-->
+<!--        <property name="houseNo" value="83"/>-->
+<!--        <property name="city" value="Bangalore"/>-->
+<!--        <property name="pinCode" value="560059"/>-->
+<!--    </bean>-->
 
+<!--    &lt;!&ndash; Student Bean &ndash;&gt;-->
+<!--    <bean id="student1" class="Dependency_Injection01.Student">-->
+<!--        <property name="rollNo" value="101"/>-->
+<!--        <property name="name" value="Alam Bhai"/>-->
+<!--        <property name="address" ref="addrId"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="Dependecy_lnjection_Using_Contructor_Method.Address" id="addrId">-->
+<!--        <constructor-arg value="83"/>-->
+<!--        <constructor-arg value="Bangalore"/>-->
+<!--        <constructor-arg value="560059"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="Dependecy_lnjection_Using_Contructor_Method.Student " id="stdId">-->
+<!--        <constructor-arg value="102"/>-->
+<!--        <constructor-arg value="Alam Bhai"/>-->
+<!--        <constructor-arg ref="addrId"/>-->
+
+<!--    </bean>-->
 
 
 </beans>
